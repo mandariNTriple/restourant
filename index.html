@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container" id="container"></section>
+    <div id="order-container" style="display: none;"></div>
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Payment Information</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="card-name">Full Name</label>
+                    <input type="text" id="card-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-cvv">CVV</label>
+                    <input type="text" id="card-cvv" placeholder="123" required>
+                </div>
+                <button type="submit" class="buy-btn">Buy</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="thank-you-block" class="thank-you" style="display: none"></div>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>

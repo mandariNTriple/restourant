@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    color: #333;
+    font-family: "Smythe", system-ui;
+}
+
+.smythe-regular {
+    font-family: "Smythe", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 0 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    min-width: 400px;
+    width: 450px;
+    max-width: 450px;
+    box-shadow: 0px 0px 10px 1px #999;
+    margin: 0 20px 15px 20px;
+    border-radius: 5px;
+    max-height: 120px;
+}
+
+.card img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 100%;
+}
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 0px;
+    padding: 11px;
+}
+
+.card .emoji {
+    font-size: 40px;
+    padding: 0 5px 0 15px;
+    width: 60px;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 30px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+#order-container {
+    margin: 0px auto 20px auto;
+    width: 410px;
+    max-width: 410px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 1px #999;
+    border-radius: 8px;
+}
+
+
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.remove-btn {
+    color: #ff0000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.item-quantity {
+    color: #666;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.complete-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #16DB99;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Smythe", system-ui;
+    font-size: 20px;
+}
+
+.complete-btn:hover {
+    background: #14c989;
+}
+
+/* Стили для модального окна оплаты */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 410px;
+    border-radius: 5px;
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.empty-order-message {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+    font-style: italic;
+}
+
+.buy-btn {
+    background: #16DB99;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-family: "Smythe", system-ui;
+    font-size: 20px;
+}
+
+.buy-btn:hover {
+    background: #14c989;
+}
+
+/* Стили для блока благодарности */
+.thank-you {
+    display: none;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 10px auto 30px auto;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 60px;
+    color: #28a745;
+    max-width: 410px;
+    border: 1px solid #d4edda;
+}
+
+.thank-you-content {
+    padding: 20px;
+}
+
+#payment-form {
+    margin-top: 12px;
+}
+
+.thank-you p {
+    font-size: 20px;
+}
+
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 3px 0;
+}
+
+h3 {
+    font-size: 15px;
+    margin: 0 0 3px 0;
+}
+
+p {
+    font-size: 15px;
+    margin: 5px 0 5px 0;
+}
